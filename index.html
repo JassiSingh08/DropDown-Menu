@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop down menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Resources</li>
+          <li>Contact us</li>
+          <li>About</li>
+          <li>Click Avatar &rightarrow;</li>
+        </ul>
+        <img onclick="toggleMenu()" src="./Profile.jpg">
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="./Profile.jpg">
+              <h3>Jassi Singh</h3>
+            </div> 
+            <hr>
+            <ul>
+              <li><img src="./Profile.jpg">Edit Profile</li>
+              <li><img src="./Profile.jpg">Settings and Privacy </li>
+              <li><img src="./Profile.jpg">Help and support</li>
+              <li><img src="./Profile.jpg">logout</li>
+           </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script>
+      let subMenu = document.getElementById("subMenu");
+
+      function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+        console.log("hello NO");
+      }
+    </script>
+</body>
+</html>
